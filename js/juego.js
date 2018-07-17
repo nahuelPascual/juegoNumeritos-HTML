@@ -32,11 +32,6 @@ inicializarNumPC();
         mal = 0 ;
     var numeroUser = document.getElementById("textField").value;
 
-    if(intentos==0){
-        document.getElementById("header").style.visibility = "visible";
-        document.getElementById("gamePanel").style.marginTop = "10%";
-    }
-
     if(numeroUser.length == 4){
         intentos++;
         for(var i=0; i<4; i++){
@@ -79,12 +74,19 @@ inicializarNumPC();
         document.getElementById("mal"+i).innerHTML = "";
         document.getElementById("int"+i).innerHTML = "";
     }
+    document.getElementById("header").style.visibility = "hidden";
+    document.getElementById("gamePanel").style.marginTop = "0%";
+    document.getElementById("textField").focus();
 }
 /*VOID*/function showTabla(bien, regular, mal, numeroUser){
+	if(intentos==1){
+        document.getElementById("header").style.visibility = "visible";
+        document.getElementById("gamePanel").style.marginTop = "10%";
+    }
     document.getElementById("bien"+(intentos-1)).innerHTML = bien;
     document.getElementById("reg"+(intentos-1)).innerHTML = regular;
     document.getElementById("mal"+(intentos-1)).innerHTML = mal;
-    document.getElementById("int"+(intentos-1)).innerHTML = numeroUser;
+    document.getElementById("int"+(intentos-1)).innerHTML = numeroUser + " (" + intentos + ")";
     document.getElementById("textField").value = "";
     document.getElementById("textField").focus();
 }  
