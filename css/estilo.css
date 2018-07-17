@@ -1,0 +1,72 @@
+body{
+	background-color: #999999;
+}
+
+#reglas{
+	background-color: #999990;
+	border-width: 5px;
+	border-style: outset;
+	font-family: Calibri;
+	font-size: 22px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+}
+
+#principal{
+	margin-right: 2%;
+	margin-left: 2%;
+	/*margin-top: 2%;*/
+	margin-bottom: 0px;
+	margin-top: 2%;
+	align-content: center;
+}
+
+/*#gamePanel{
+	display: block;
+	float: left;
+	margin-top: 20%;
+	/*height: 200px;
+}*/
+#gamePanel{
+	float: left;
+	width: 143px;
+	/*margin-top: 20%;*/
+	margin-left: 15%;
+}
+#textField{
+	/*margin-left: 10%;*/
+	width: 55.55px;
+}
+#restartBtn{
+	display: block;
+	margin-top: 2px;
+	/*margin-left: 10%;*/
+	width: 143px;
+}
+
+#header{
+	font-family: Georgia;
+	font-size: 24px;
+	visibility: hidden;
+}
+#tablaIntentos{
+	display: inline-block;
+	float:right;
+	margin-right: 15%;
+/*	border:solid;
+	border-width: 1px;
+*/	padding: 2px;
+}
+.datoTablaIntentos{
+	height: 25px;
+	width: 100px;
+	border: 2px solid black;
+	background-color: #999989;
+	font-family: Arial Black; 
+	empty-cells: hide;
+	height: 31px;
+	width: 140px;
+	text-align: center;
+}
+
+

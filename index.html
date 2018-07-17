@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="utf-8">
+<head>
+	<title>Juego de los numeritos</title>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css"></style>
+</head>
+<body>
+
+	<fieldset id="reglas">
+		<p>El objetivo del juego es adivinar el numero de 4 digitos en que está pensando la computadora.</p>
+		<ul>
+		    <em><li>El número <b>no</b> tiene dígitos repetidos. </li>
+		    <li>Tras cada intento, el programa indica la cantidad de digitos <b>bien</b> (correctamente posicionados),
+		     la cantidad de dígitos <b>regular</b> (pertenecen al número pero no están bien ubicados)
+		     y la cantidad de dígitos <b>mal</b> (no pertenecen al número). </li>
+		    <li>Tenes un máximo de <b>10 intentos</b>. </li></em>
+		</ul>
+	</fieldset>
+
+	<section id="principal">
+
+		<article id="gamePanel">
+			<input type="number" id="textField" autofocus>
+			<input type="button" id="playBtn" value="ADIVINAR" onclick="adivinar()">
+			<button id="restartBtn" onclick="replay()">JUGAR DE NUEVO</button>
+		</article>
+
+		<table id="tablaIntentos">
+			<tr id="header"> <th>BIEN</th> 		<th>REGULAR</th>	<th>MAL</th>	<th>INTENTOS</th> </tr>
+			<tr id="f0">		<td id="bien0" class="datoTablaIntentos"></td>	<td id="reg0" class="datoTablaIntentos"></td>	<td id="mal0" class="datoTablaIntentos"></td>	<td id="int0" class="datoTablaIntentos"></td> </tr>
+			<tr id="f1">		<td id="bien1" class="datoTablaIntentos"></td>	<td id="reg1" class="datoTablaIntentos"></td>	<td id="mal1" class="datoTablaIntentos"></td>	<td id="int1" class="datoTablaIntentos"></td> </tr>
+			<tr id="f2">		<td id="bien2" class="datoTablaIntentos"></td>	<td id="reg2" class="datoTablaIntentos"></td>	<td id="mal2" class="datoTablaIntentos"></td>	<td id="int2" class="datoTablaIntentos"></td> </tr>
+			<tr id="f3">		<td id="bien3" class="datoTablaIntentos"></td>	<td id="reg3" class="datoTablaIntentos"></td>	<td id="mal3" class="datoTablaIntentos"></td>	<td id="int3" class="datoTablaIntentos"></td> </tr>
+			<tr id="f4">		<td id="bien4" class="datoTablaIntentos"></td>	<td id="reg4" class="datoTablaIntentos"></td>	<td id="mal4" class="datoTablaIntentos"></td>	<td id="int4" class="datoTablaIntentos"></td> </tr>
+			<tr id="f5">		<td id="bien5" class="datoTablaIntentos"></td>	<td id="reg5" class="datoTablaIntentos"></td>	<td id="mal5" class="datoTablaIntentos"></td>	<td id="int5" class="datoTablaIntentos"></td> </tr>
+			<tr id="f6">		<td id="bien6" class="datoTablaIntentos"></td>	<td id="reg6" class="datoTablaIntentos"></td>	<td id="mal6" class="datoTablaIntentos"></td>	<td id="int6" class="datoTablaIntentos"></td> </tr>
+			<tr id="f7">		<td id="bien7" class="datoTablaIntentos"></td>	<td id="reg7" class="datoTablaIntentos"></td>	<td id="mal7" class="datoTablaIntentos"></td>	<td id="int7" class="datoTablaIntentos"></td> </tr>
+			<tr id="f8">		<td id="bien8" class="datoTablaIntentos"></td>	<td id="reg8" class="datoTablaIntentos"></td>	<td id="mal8" class="datoTablaIntentos"></td>	<td id="int8" class="datoTablaIntentos"></td> </tr>
+			<tr id="f9">		<td id="bien9" class="datoTablaIntentos"></td>	<td id="reg9" class="datoTablaIntentos"></td>	<td id="mal9" class="datoTablaIntentos"></td>	<td id="int9" class="datoTablaIntentos"></td> </tr>
+		</table>
+	</section>
+
+<script type="text/javascript" src="js/juego.js"></script>
+
+</body>
+</html>
+<!--  -->
