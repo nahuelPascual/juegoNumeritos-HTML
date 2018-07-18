@@ -21,7 +21,7 @@
 	<section id="principal">
 
 		<article id="gamePanel">
-			<input type="number" id="textField" autofocus>
+			<input type="number" id="textField" onkeyup = "if(event.keyCode == 13) adivinar();" autofocus>
 			<input type="button" id="playBtn" value="ADIVINAR" onclick="adivinar()">
 			<button id="restartBtn" onclick="replay()">JUGAR DE NUEVO</button>
 		</article>
