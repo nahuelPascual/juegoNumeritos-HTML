@@ -53,6 +53,7 @@ inicializarNumPC();
             ganaste = true;
             alert("GANASTE");
             document.getElementById("textField").disabled = true;
+            document.getElementById("playBtn").disabled = true;
         } else{
             if(intentos==10){
                 alert("PERDISTE\nEl numero correcto era: " + numero(numeroPC));
